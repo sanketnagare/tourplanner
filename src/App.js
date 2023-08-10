@@ -1,23 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import Testo from './components/Testo';
+import reviews from './TestData';
+
 
 function App() {
+  // const [courses, setCourses] = useState(null);
+  // const [loading, setLoading] = useState(true);
+  // const [category, setCategory] = useState(filterData[0].title);
+
+  // async function fetchData() {
+  //   setLoading(true);
+  //   try {
+  //     let response = await fetch(apiUrl);
+  //     let output = await response.json();
+  //     setCourses(output.data);
+  //   } catch (error) {
+  //     console.log("Error in fetching the data");
+  //   }
+  //   setLoading(false);
+  // }
+
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Navbar></Navbar>
+      <Filter filterData={filterData} category={category} setCategory={setCategory}></Filter>
+      {
+        loading ? (<Spinner />) : (<Courses courses={courses} category={category}></Courses>)
+      } */}
+
+
+      {/* Testimonial app */}
+      <Testo reviews={reviews}></Testo>
     </div>
   );
 }
